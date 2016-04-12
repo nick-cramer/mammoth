@@ -9,8 +9,15 @@
   </head>
   <body>
     <a-scene>
-      <a-collada-model src="mammoth.dae" rotation="0 90 0" position="0 2.15 0"></a-model> 
+	  <a-entity position="0 1.8 0">
+		<a-entity id="mycamera" camera look-controls>
+			<a-collada-model src="mammoth.dae" rotation="0 90 0" position="0 0 -4">
+			  <a-animation attribute="rotation" dur="10000" repeat="indefinite" to="0 360 0"></a-animation>
+			</a-collada-model> 
+		</a-entity>
+	  </a-entity>
       <a-sky color="#011155"></a-sky>
     </a-scene>
+	
   </body>
 </html>
