@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
- <head>
+<head>
   <title>My A-Frame Scene</title>
   <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
-  <script src="js/aframe-orbit-controls-component.min.js"></script>
- </head>
-
- <body>
+  <script src="js/aframe-orbit-controls-component.js"></script> 
+</head>
+ 
+<body>
     <a-scene>
-      <a-camera target="#target" distance="1" orbit-controls look-controls-enabled=false wasd-controls-enabled=true position="0 0 0" ></a-camera>
-      <a-collada-model id="target" src="mammoth.dae" rotation="0 90 0" position="0 2.15 0"></a-model> 	  
-      <a-sky src="dig1.jpg" rotation="0 -130 0"></a-sky>
+      <a-camera target="#target" distance="5" orbit-controls look-controls-enabled=false wasd-controls-enabled=true position="0 0 -20" ></a-camera>
+	  <a-collada-model id="target" src="mammoth.dae" rotation="0 0 0" position="0 0 0"></a-collada-model> 
+      <a-sky color="#011155"></a-sky>
     </a-scene>
- </body>
- </html>
+</body>
