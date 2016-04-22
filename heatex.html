@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Woolly Mammoth Skeleton</title>
+    <meta name="description" content="Skeleton Orbit">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png" />
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="js/aframe-orbit-controls-component.js"></script> 
+  </head>
+ 
+  <body>
+    <a-scene>
+      <a-camera target="#target" distance="5" orbit-controls look-controls-enabled=false wasd-controls-enabled=true position="0 0 -20" ></a-camera>
+	  <a-collada-model id="target" src="heat-exchanger.dae" rotation="0 0 0" position="0 0 0"></a-collada-model> 
+      <a-sky color="#010155"></a-sky>
+      <!--<a-sky src="dig1.jpg" rotation="0 -130 0"></a-sky>-->
+    </a-scene>
+  </body>
+</html>
